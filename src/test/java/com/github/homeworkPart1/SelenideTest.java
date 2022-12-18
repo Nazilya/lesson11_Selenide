@@ -1,4 +1,4 @@
-package com.github.homework;
+package com.github.homeworkPart1;
 
 import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.Test;
@@ -36,11 +36,11 @@ public class SelenideTest extends BaseTest {
         });
 
         step("проверить, что присутствует страница: " + page, () -> {
-            $$("#wiki_search_results a").filter(visible).findBy(text("SoftAssertions")).shouldHave(text(page));
+            $$("#wiki_search_results a").filter(visible).findBy(text(page)).shouldHave(text(page));
         });
 
         step("перейти на страницу: " + page, () -> {
-            $$("#wiki_search_results a").filter(visible).findBy(text("SoftAssertions")).click();
+            $$("#wiki_search_results a").filter(visible).findBy(text(page)).click();
             //$x("//div[@id='wiki_search_results']//a[.='SoftAssertions']").click();
         });
 

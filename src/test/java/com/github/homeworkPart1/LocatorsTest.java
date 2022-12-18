@@ -1,4 +1,4 @@
-package com.github.homework;
+package com.github.homeworkPart1;
 
 import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Selenide.$;
